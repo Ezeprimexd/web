@@ -1,0 +1,169 @@
+body {  
+    font-family: sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color: white;  
+    color: black;  
+}  
+
+.container {  
+    width: 80%;  
+    margin: 0 auto;  
+}  
+
+.navbar {  
+    background-color: black;  
+    color: white;  
+    padding: 10px 0;  
+    position: fixed;  
+    width: 100%;  
+    top: 0;  
+    z-index: 1000;  
+}  
+
+.navbar .container {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+
+.navbar .logo {  
+    font-size: 1.8em;  
+    font-weight: bold;  
+}  
+
+.navbar ul {  
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+    display: flex;  
+}  
+
+.navbar ul li {  
+    margin-left: 20px;  
+}  
+
+.navbar ul li a {  
+    color: white;  
+    text-decoration: none;  
+    font-size: 1.1em;  
+    transition: color 0.3s ease;  
+}  
+
+.navbar ul li a:hover {  
+    color: #ccc; /* Un gris claro para el hover */  
+}  
+
+/* Estilos para las secciones */  
+section {  
+    padding: 80px 0;  
+    text-align: center;  
+}  
+
+#inicio {  
+    background-color: white;  
+    color: black;  
+    padding-top: 150px; /* Para dejar espacio para la barra de navegación fija */  
+}  
+
+.hero h1 {  
+    font-size: 3em;  
+    margin-bottom: 20px;  
+}  
+
+.hero p {  
+    font-size: 1.2em;  
+    margin-bottom: 30px;  
+}  
+
+.btn {  
+    display: inline-block;  
+    background-color: black;  
+    color: white;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    transition: background-color 0.3s ease;  
+    border: none;  
+    cursor: pointer;  
+}  
+
+.btn:hover {  
+    background-color: #333;  
+}  
+
+#productos {  
+    background-color: #f4f4f4; /* Un gris muy claro para diferenciar */  
+    color: black;  
+}  
+
+.productos-grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    gap: 30px;  
+    margin-top: 40px;  
+}  
+
+.producto-item {  
+    background-color: white;  
+    padding: 20px;  
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+    text-align: left;  
+}  
+
+.producto-item img {  
+    max-width: 100%;  
+    height: auto;  
+    display: block;  
+    margin-bottom: 15px;  
+}  
+
+.producto-item h3 {  
+    margin-top: 0;  
+    margin-bottom: 10px;  
+}  
+
+.producto-item .precio {  
+    font-weight: bold;  
+    color: black;  
+    display: block;  
+    margin-bottom: 15px;  
+}  
+
+#ofertas {  
+    background-color: white;  
+    color: black;  
+}  
+
+#contacto {  
+    background-color: #f4f4f4;  
+    color: black;  
+}  
+
+#contacto form {  
+    display: flex;  
+    flex-direction: column;  
+    max-width: 400px;  
+    margin: 20px auto 0;  
+}  
+
+#contacto form input,  
+#contacto form textarea {  
+    margin-bottom: 15px;  
+    padding: 10px;  
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+}  
+
+#contacto form button {  
+    align-self: flex-start;  
+}  
+
+
+footer {  
+    background-color: black;  
+    color: white;  
+    text-align: center;  
+    padding: 20px 0;  
+}
