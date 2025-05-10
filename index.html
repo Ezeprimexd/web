@@ -3,89 +3,421 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Fluxo Shop - Zapatillas</title>  
-    <link rel="stylesheet" href="style.css">  
+    <meta name="description" content="Fluxo Shop - Las mejores zapatillas del mercado con estilo y comodidad">  
+    <title>Fluxo Shop | Zapatillas Premium</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+    <link rel="stylesheet" href="css/style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
 </head>  
 <body>  
-
-    <header class="navbar">  
+    <!-- Barra de navegación -->  
+    <header class="header">  
         <div class="container">  
-            <div class="logo">Fluxo Shop</div>  
-            <nav>  
-                <ul>  
-                    <li><a href="#inicio">Inicio</a></li>  
-                    <li><a href="#productos">Productos</a></li>  
-                    <li><a href="#ofertas">Ofertas</a></li>  
-                    <li><a href="#contacto">Contacto</a></li>  
+            <a href="#" class="logo">Fluxo<span>Shop</span></a>  
+            
+            <nav class="navbar">  
+                <ul class="nav-menu">  
+                    <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>  
+                    <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li>  
+                    <li class="nav-item"><a href="#ofertas" class="nav-link">Ofertas</a></li>  
+                    <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>  
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>  
                 </ul>  
+                
+                <div class="nav-icons">  
+                    <a href="#" class="search-btn"><i class="fas fa-search"></i></a>  
+                    <a href="#" class="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>  
+                    <a href="#" class="user-btn"><i class="fas fa-user"></i></a>  
+                </div>  
             </nav>  
+            
+            <div class="hamburger">  
+                <span class="bar"></span>  
+                <span class="bar"></span>  
+                <span class="bar"></span>  
+            </div>  
         </div>  
     </header>  
 
+    <!-- Hero Section -->  
     <section id="inicio" class="hero">  
         <div class="container">  
-            <h1>Bienvenido a Fluxo Shop</h1>  
-            <p>Encuentra las zapatillas perfectas para ti.</p>  
-            <a href="#productos" class="btn">Ver Productos</a>  
-        </div>  
-    </section>  
-
-    <section id="productos" class="productos">  
-        <div class="container">  
-            <h2>Nuestros Productos</h2>  
-            <div class="productos-grid">  
-                <div class="producto-item">  
-                    <img src="placeholder_zapatilla.jpg" alt="Zapatilla 1">  
-                    <h3>Modelo Clásico</h3>  
-                    <p>Estilo atemporal para el día a día.</p>  
-                    <span class="precio">$89.99</span>  
-                    <button class="btn">Comprar</button>  
+            <div class="hero-content">  
+                <h1>Descubre tu próximo par perfecto</h1>  
+                <p>Zapatillas diseñadas para el confort y el estilo. Tecnología avanzada en cada paso.</p>  
+                <div class="hero-buttons">  
+                    <a href="#productos" class="btn btn-primary">Ver colección</a>  
+                    <a href="#ofertas" class="btn btn-secondary">Ofertas exclusivas</a>  
                 </div>  
-                <div class="producto-item">  
-                    <img src="placeholder_zapatilla.jpg" alt="Zapatilla 2">  
-                    <h3>Modelo Deportivo</h3>  
-                    <p>Perfectas para entrenar o correr.</p>  
-                    <span class="precio">$119.99</span>  
-                    <button class="btn">Comprar</button>  
-                </div>  
-                <div class="producto-item">  
-                    <img src="placeholder_zapatilla.jpg" alt="Zapatilla 3">  
-                    <h3>Modelo Casual</h3>  
-                    <p>Comodidad y estilo para cualquier ocasión.</p>  
-                    <span class="precio">$79.99</span>  
-                    <button class="btn">Comprar</button>  
-                </div>  
-                <!-- Puedes añadir más productos aquí -->  
+            </div>  
+            <div class="hero-image">  
+                <img src="images/hero-zapatilla.png" alt="Zapatilla Fluxo premium" class="floating">  
             </div>  
         </div>  
     </section>  
 
-    <section id="ofertas" class="ofertas">  
+    <!-- Marcas destacadas -->  
+    <section class="brands">  
         <div class="container">  
-            <h2>Ofertas Especiales</h2>  
-            <p>¡No te pierdas nuestras increíbles ofertas!</p>  
-            <!-- Aquí podrías agregar productos en oferta o banners -->  
+            <h2 class="section-title">Colaboramos con las mejores marcas</h2>  
+            <div class="brands-grid">  
+                <img src="images/brand-nike.png" alt="Nike">  
+                <img src="images/brand-adidas.png" alt="Adidas">  
+                <img src="images/brand-puma.png" alt="Puma">  
+                <img src="images/brand-newbalance.png" alt="New Balance">  
+                <img src="images/brand-vans.png" alt="Vans">  
+            </div>  
         </div>  
     </section>  
 
-    <section id="contacto" class="contacto">  
+    <!-- Productos destacados -->  
+    <section id="productos" class="featured-products">  
         <div class="container">  
-            <h2>Contáctanos</h2>  
-            <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>  
-            <form action="#">  
-                <input type="text" placeholder="Nombre">  
-                <input type="email" placeholder="Correo Electrónico">  
-                <textarea placeholder="Mensaje"></textarea>  
-                <button type="submit" class="btn">Enviar Mensaje</button>  
+            <div class="section-header">  
+                <h2 class="section-title">Nuestros productos destacados</h2>  
+                <a href="#" class="view-all">Ver todos <i class="fas fa-arrow-right"></i></a>  
+            </div>  
+            
+            <div class="products-grid">  
+                <!-- Producto 1 -->  
+                <div class="product-card">  
+                    <div class="product-badge">Nuevo</div>  
+                    <div class="product-image">  
+                        <img src="images/product-1.png" alt="Fluxo Runner Pro">  
+                        <div class="product-actions">  
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>  
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>  
+                        </div>  
+                    </div>  
+                    <div class="product-info">  
+                        <div class="product-rating">  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star-half-alt"></i>  
+                            <span>(24)</span>  
+                        </div>  
+                        <h3 class="product-title">Fluxo Runner Pro</h3>  
+                        <p class="product-desc">Zapatillas de running con amortiguación reactiva</p>  
+                        <div class="product-price">  
+                            <span class="current-price">$129.99</span>  
+                            <span class="old-price">$149.99</span>  
+                        </div>  
+                        <button class="btn btn-add-to-cart">Añadir al carrito</button>  
+                    </div>  
+                </div>  
+                
+                <!-- Producto 2 -->  
+                <div class="product-card">  
+                    <div class="product-badge hot">Popular</div>  
+                    <div class="product-image">  
+                        <img src="images/product-2.png" alt="Fluxo Urban Classic">  
+                        <div class="product-actions">  
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>  
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>  
+                        </div>  
+                    </div>  
+                    <div class="product-info">  
+                        <div class="product-rating">  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <span>(42)</span>  
+                        </div>  
+                        <h3 class="product-title">Fluxo Urban Classic</h3>  
+                        <p class="product-desc">Estilo urbano con máxima comodidad</p>  
+                        <div class="product-price">  
+                            <span class="current-price">$99.99</span>  
+                        </div>  
+                        <button class="btn btn-add-to-cart">Añadir al carrito</button>  
+                    </div>  
+                </div>  
+                
+                <!-- Producto 3 -->  
+                <div class="product-card">  
+                    <div class="product-badge sale">-20%</div>  
+                    <div class="product-image">  
+                        <img src="images/product-3.png" alt="Fluxo Trail Master">  
+                        <div class="product-actions">  
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>  
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>  
+                        </div>  
+                    </div>  
+                    <div class="product-info">  
+                        <div class="product-rating">  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <span>(37)</span>  
+                        </div>  
+                        <h3 class="product-title">Fluxo Trail Master</h3>  
+                        <p class="product-desc">Agarre superior para senderos difíciles</p>  
+                        <div class="product-price">  
+                            <span class="current-price">$119.99</span>  
+                            <span class="old-price">$149.99</span>  
+                        </div>  
+                        <button class="btn btn-add-to-cart">Añadir al carrito</button>  
+                    </div>  
+                </div>  
+                
+                <!-- Producto 4 -->  
+                <div class="product-card">  
+                    <div class="product-image">  
+                        <img src="images/product-4.png" alt="Fluxo Lite Speed">  
+                        <div class="product-actions">  
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>  
+                            <button class="add-wishlist"><i class="fas fa-heart"></i></button>  
+                        </div>  
+                    </div>  
+                    <div class="product-info">  
+                        <div class="product-rating">  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="fas fa-star"></i>  
+                            <i class="far fa-star"></i>  
+                            <span>(18)</span>  
+                        </div>  
+                        <h3 class="product-title">Fluxo Lite Speed</h3>  
+                        <p class="product-desc">Ultraligeras para máxima velocidad</p>  
+                        <div class="product-price">  
+                            <span class="current-price">$109.99</span>  
+                        </div>  
+                        <button class="btn btn-add-to-cart">Añadir al carrito</button>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Ofertas especiales -->  
+    <section id="ofertas" class="special-offers">  
+        <div class="container">  
+            <h2 class="section-title">Ofertas especiales</h2>  
+            <p class="section-subtitle">Aprovecha nuestras promociones por tiempo limitado</p>  
+            
+            <div class="offers-grid">  
+                <div class="offer-card big-offer">  
+                    <div class="offer-content">  
+                        <span class="offer-badge">OFERTA FLASH</span>  
+                        <h3>Hasta 50% de descuento</h3>  
+                        <p>En selección de zapatillas de running</p>  
+                        <div class="countdown">  
+                            <div class="countdown-item">  
+                                <span class="countdown-number" id="days">00</span>  
+                                <span class="countdown-label">Días</span>  
+                            </div>  
+                            <div class="countdown-item">  
+                                <span class="countdown-number" id="hours">00</span>  
+                                <span class="countdown-label">Horas</span>  
+                            </div>  
+                            <div class="countdown-item">  
+                                <span class="countdown-number" id="minutes">00</span>  
+                                <span class="countdown-label">Min</span>  
+                            </div>  
+                            <div class="countdown-item">  
+                                <span class="countdown-number" id="seconds">00</span>  
+                                <span class="countdown-label">Seg</span>  
+                            </div>  
+                        </div>  
+                        <a href="#" class="btn btn-primary">Comprar ahora</a>  
+                    </div>  
+                    <div class="offer-image">  
+                        <img src="images/offer-1.png" alt="Oferta especial">  
+                    </div>  
+                </div>  
+                
+                <div class="offer-card small-offer">  
+                    <div class="offer-content">  
+                        <span class="offer-badge">2x1</span>  
+                        <h3>Lleva 2, paga 1</h3>  
+                        <p>En modelos seleccionados</p>  
+                        <a href="#" class="btn btn-outline">Ver modelos</a>  
+                    </div>  
+                </div>  
+                
+                <div class="offer-card small-offer">  
+                    <div class="offer-content">  
+                        <span class="offer-badge">ENVÍO GRATIS</span>  
+                        <h3>Compras superiores a $100</h3>  
+                        <p>En todo el catálogo</p>  
+                        <a href="#" class="btn btn-outline">Ver catálogo</a>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Testimonios -->  
+    <section class="testimonials">  
+        <div class="container">  
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>  
+            
+            <div class="testimonials-slider">  
+                <div class="testimonial-card">  
+                    <div class="testimonial-rating">  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                    </div>  
+                    <p class="testimonial-text">"Las zapatillas Fluxo Runner Pro son increíbles. La amortiguación es perfecta para mis carreras diarias y el diseño es moderno. ¡Las recomiendo totalmente!"</p>  
+                    <div class="testimonial-author">  
+                        <img src="images/client-1.jpg" alt="Carlos M.">  
+                        <div>  
+                            <h4>Carlos M.</h4>  
+                            <span>Corredor profesional</span>  
+                        </div>  
+                    </div>  
+                </div>  
+                
+                <div class="testimonial-card">  
+                    <div class="testimonial-rating">  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star-half-alt"></i>  
+                    </div>  
+                    <p class="testimonial-text">"Compré las Urban Classic para uso diario y son las más cómodas que he tenido. El servicio de Fluxo Shop fue rápido y el empaque muy cuidado."</p>  
+                    <div class="testimonial-author">  
+                        <img src="images/client-2.jpg" alt="Ana L.">  
+                        <div>  
+                            <h4>Ana L.</h4>  
+                            <span>Estudiante universitaria</span>  
+                        </div>  
+                    </div>  
+                </div>  
+                
+                <div class="testimonial-card">  
+                    <div class="testimonial-rating">  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                        <i class="fas fa-star"></i>  
+                    </div>  
+                    <p class="testimonial-text">"Como senderista experto, las Trail Master superaron mis expectativas. Excelente agarre en terrenos difíciles y muy duraderas. Volveré a comprar."</p>  
+                    <div class="testimonial-author">  
+                        <img src="images/client-3.jpg" alt="Javier R.">  
+                        <div>  
+                            <h4>Javier R.</h4>  
+                            <span>Guía de montaña</span>  
+                        </div>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Nosotros -->  
+    <section id="nosotros" class="about">  
+        <div class="container">  
+            <div class="about-content">  
+                <h2 class="section-title">Sobre Fluxo Shop</h2>  
+                <p>Desde 2015, Fluxo Shop se ha dedicado a ofrecer las mejores zapatillas del mercado, combinando estilo, tecnología y comodidad en cada diseño.</p>  
+                
+                <div class="about-features">  
+                    <div class="feature-item">  
+                        <div class="feature-icon">  
+                            <i class="fas fa-truck"></i>  
+                        </div>  
+                        <div class="feature-text">  
+                            <h3>Envío rápido</h3>  
+                            <p>Recibe tus pedidos en 24-48 horas</p>  
+                        </div>  
+                    </div>  
+                    
+                    <div class="feature-item">  
+                        <div class="feature-icon">  
+                            <i class="fas fa-undo"></i>  
+                        </div>  
+                        <div class="feature-text">  
+                            <h3>Devoluciones fáciles</h3>  
+                            <p>30 días para cambiar de opinión</p>  
+                        </div>  
+                    </div>  
+                    
+                    <div class="feature-item">  
+                        <div class="feature-icon">  
+                            <i class="fas fa-lock"></i>  
+                        </div>  
+                        <div class="feature-text">  
+                            <h3>Pago seguro</h3>  
+                            <p>Tus datos siempre protegidos</p>  
+                        </div>  
+                    </div>  
+                    
+                    <div class="feature-item">  
+                        <div class="feature-icon">  
+                            <i class="fas fa-headset"></i>  
+                        </div>  
+                        <div class="feature-text">  
+                            <h3>Soporte 24/7</h3>  
+                            <p>Estamos siempre para ayudarte</p>  
+                        </div>  
+                    </div>  
+                </div>  
+            </div>  
+            
+            <div class="about-image">  
+                <img src="images/about-image.jpg" alt="Nuestro equipo">  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Newsletter -->  
+    <section class="newsletter">  
+        <div class="container">  
+            <div class="newsletter-content">  
+                <h2>Suscríbete a nuestro newsletter</h2>  
+                <p>Recibe ofertas exclusivas, novedades y consejos para el cuidado de tus zapatillas.</p>  
+            </div>  
+            
+            <form class="newsletter-form">  
+                <input type="email" placeholder="Tu correo electrónico" required>  
+                <button type="submit" class="btn btn-primary">Suscribirse</button>  
             </form>  
         </div>  
     </section>  
 
-    <footer>  
+    <!-- Contacto -->  
+    <section id="contacto" class="contact">  
         <div class="container">  
-            <p>&copy; 2023 Fluxo Shop. Todos los derechos reservados.</p>  
-        </div>  
-    </footer>  
-
+            <div class="contact-info">  
+                <h2 class="section-title">Contáctanos</h2>  
+                <p>Estamos aquí para ayudarte. Contáctanos por cualquier consulta o sugerencia.</p>  
+                
+                <div class="contact-details">  
+                    <div class="contact-item">  
+                        <div class="contact-icon">  
+                            <i class="fas fa-map-marker-alt"></i>  
+                        </div>  
+                        <div class="contact-text">  
+                            <h3>Dirección</h3>  
+                            <p>Calle Moda 123, Barcelona, España</p>  
+                        </div>  
+                    </div>  
+                    
+                    <div class="contact-item">  
+                        <div class="contact-icon">  
+                            <i class="fas fa-phone-alt"></i>  
+                        </div>  
+                        <div class="contact-text">  
+                            <h3>Teléfono</h3>  
+                            <p>+34 123 456 789</p>  
+                        </div>  
+                    </div>  
+                    
+                    <div class="contact-item">  
+                        <div class="contact-icon">
 </body>  
 </html>
